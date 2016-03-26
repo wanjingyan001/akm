@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/doctor_suggest"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_bottom_8dp"
+    android:paddingLeft="@dimen/padding_left_16dp"
+    android:paddingRight="@dimen/padding_right_16dp"
+    android:paddingTop="@dimen/padding_top_8dp">
+
+    <TextView
+        android:id="@+id/doctor_suggest_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="就医建议"
+        android:textColor="@color/font_color"
+        android:textSize="@dimen/font_size_16sp" />
+
+    <View
+        style="@style/underline"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="皮肤发炎" />
+
+        <!-- 由药品和用量拼接-->
+        <TextView
+            android:id="@+id/Recommend_medication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="皮炎停*1盒" />
+
+        <!-- 药品用法-->
+        <TextView
+            android:id="@+id/Drug_Usage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="一日三次" />
+
+        <TextView
+            android:id="@+id/explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="无需检验" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

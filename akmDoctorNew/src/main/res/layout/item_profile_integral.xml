@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/white"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/all_money_pic"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@mipmap/ic_gray_paint_small" />
+
+        <TextView
+            android:id="@+id/consumption_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/all_money_pic"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/all_money_pic"
+            android:text="问诊消费" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/all_money_title"
+            android:layout_below="@id/all_money_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="余额：2.00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/spending_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-12-09"
+            android:textColor="@color/edit_content" />
+
+        <TextView
+            android:id="@+id/balance_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/spending_time"
+            android:layout_below="@id/spending_time"
+            android:layout_marginTop="5dp"
+            android:text="-2.00"
+            android:textColor="@color/text_color_black" />
+    </RelativeLayout>
+</RelativeLayout>

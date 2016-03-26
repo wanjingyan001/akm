@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+   >
+<TextView
+    android:id="@+id/mPersonItemNameLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="name"
+    android:gravity="center"
+    android:paddingLeft="16dp"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:textSize="@dimen/font_size_18sp" />
+    <TextView
+        android:id="@+id/mPersonItemSex_AgeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="性别,年龄"
+        android:textColor="@color/gray"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/mPersonItemNameLabel"
+        android:textSize="@dimen/font_size_18sp" />
+    <LinearLayout
+        android:id="@+id/mPersonItemEditorImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        >
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/action_row" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="windowBackground">#F9F9FB</color>-->
+    <color name="windowBackground">#E9E9E9</color>
+    <color name="title">#3E83EC</color>
+    <color name="font_color">#3f83EC</color>
+    <color name="profile_font_color">#9e9aca</color>
+
+    <color name="white">#ffffff</color>
+    <color name="uncheckable">#aaaaaa</color>
+    <color name="widgets_general_row_pressed">#E9E9E9</color>
+    <color name="widgets_general_row_normal">#ffffff</color>
+    <color name="widgets_general_row_line">#d8dde0</color>
+    <color name="expandchildlist">#ebebec</color>
+
+    <color name="edit_text">#aaaaaa</color>
+    <color name="title_color">#333333</color>
+    <color name="edit_stroke">#cccccc</color>
+    <color name="thrid_login_text">#696969</color>
+    <color name="sub_title">#666666</color>
+    <color name="edit_content">#999999</color>
+    <color name="red">#fd2901</color>
+    <color name="text_color_black">#030303</color>
+
+    <color name="text_content">#424242</color>
+    <color name="suggest_color">#838383</color>
+    <color name="background_color">#f1f0ee</color>
+
+    //通话界面所需要的颜色
+    <color name="widgets_dot_pressed">#8c8c8c</color>
+    <color name="widgets_dot_normal">#bcbcbc</color>
+    <color name="none_color">#00000000</color>
+
+    <color name="font_black">#585858</color>
+    <color name="app_main_color">#5b54a3</color>
+
+    <color name="chat_press_send_color">#403b75</color>
+    <color name="font_home_subtitle">#342656</color>
+    <color name="font_green">#70c397</color>
+    <color name="font_yellow">#ffd33a</color>
+    <color name="font_gray">#89898a</color>
+    <color name="font_grayish">#a8a8aa</color>
+    <color name="font_red">#e93f54</color>
+    <color name="font_pink">#f05859</color>
+    <!-- 灰色 用于下划线背景颜色-->
+    <color name="bg_gray_underline">#a4a4a4</color>
+    <!-- 浅灰 用于点击后所选中的背景颜色-->
+    <color name="bg_lightgray_select">#dcdcdf</color>
+    <color name="bg_lightgray_next">#cccccc</color>
+    <!-- 灰色 用于Activity的背景颜色-->
+    <color name="bg_gray_activity">#ececec</color>
+
+    <color name="up_load_pic_doctor_info_color">#9F9AC9</color>//浅紫
+    <color name="up_load_pic_doctor_info_color_auth_check">#cccccc</color>//灰色
+    <color name="up_load_pic_doctor_info_color_up">#5b54a3</color>//深紫
+
+    <color name="up_load_pic_doctor_info_check_true">#76bd22</color>//审核通过
+    <color name="up_load_pic_doctor_info_check_false">#ff4e00</color>//审核未通过
+    <color name="widgets_emo_pannel_bg">#ffffff</color>
+</resources>

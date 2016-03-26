@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/patient_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_default_patient" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/patient_nike_name"
+            style="@style/font_style_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="患者1昵称" />
+
+        <TextView
+            android:id="@+id/inquiry_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="最近问诊：xxxxxxxxxxxxxx" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/inquiry_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="向我问诊3次" />
+
+        <TextView
+            android:id="@+id/last_inquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/inquiry_count"
+            android:layout_below="@+id/inquiry_count"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:text="2015-11-10"
+            android:textColor="@color/text_color_black" />
+
+    </RelativeLayout>
+
+</LinearLayout>

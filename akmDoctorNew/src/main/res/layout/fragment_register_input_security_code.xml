@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/input_security_code_cancel"
+        style="@style/textstyle_blue"
+        android:layout_marginLeft="@dimen/margin_left_16dp"
+        android:text="@string/back" />
+
+    <TextView
+        android:id="@+id/input_security_code_title"
+        style="@style/text_style_small"
+        android:layout_centerHorizontal="true"
+        android:text="@string/input_security_code" />
+
+    <TextView
+        android:id="@+id/please_input"
+        style="@style/text_style_black"
+        android:layout_below="@+id/input_security_code_title"
+        android:layout_centerHorizontal="true"
+        android:text="@string/please_input" />
+
+
+    <EditText
+        android:id="@+id/security_code_edit"
+        style="@style/edittext_style"
+        android:layout_below="@+id/please_input"
+        android:hint="@string/sercurity_code"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/input_code_finish"
+        style="@style/button_style"
+        android:layout_below="@+id/security_code_edit"
+        android:text="@string/finish" />
+    <!--android:enabled="false"-->
+
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_code_finish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_8dp"
+        android:text="@string/reset_sercurity_code" />
+
+    <TextView
+        android:id="@+id/send_voice_security_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_code_finish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_8dp"
+        android:text="@string/voice_code"
+        android:textColor="@color/font_color"
+        android:clickable="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

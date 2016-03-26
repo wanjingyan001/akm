@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#80000000"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/mChatPlugLeftImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+             />
+
+        <EditText
+            android:id="@+id/mChatPlugInputEdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLength="300"
+            android:minLines="1"
+            android:lines="3"
+            android:maxLines="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="4dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textCursorDrawable="@drawable/chat_cursor_color"
+            android:background="@drawable/chat_edit_backgroud_underline_select"
+             />
+
+        <cn.zsmy.akm.doctor.chat.view.AudioRecorderButton
+            android:id="@+id/id_recorder_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_recorder_normal"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:text="@string/str_recorder_normal"
+            android:textColor="#727272"
+            android:visibility="gone"></cn.zsmy.akm.doctor.chat.view.AudioRecorderButton>
+
+        <ImageView
+            android:id="@+id/mChatPlugRightImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/chat_add_img_icon_false" />
+
+        <TextView
+            android:id="@+id/mChatPlugTxtCommitLabel"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/selector_general_button"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <cn.zsmy.akm.doctor.chat.call.PluginView
+        android:id="@+id/mChatPlugOterToolContanier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

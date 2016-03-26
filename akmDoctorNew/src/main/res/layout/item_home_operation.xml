@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="38dp"
+        android:layout_height="92dp"
+        android:background="@mipmap/ic_admissions" />
+
+    <View
+        android:id="@+id/color_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignTop="@+id/title_image"
+        android:layout_toRightOf="@+id/title_image" />
+
+
+    <LinearLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/title_image"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/expand_parent_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接诊室"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/expand_parent_explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_8dp"
+            android:textSize="13sp"
+            android:text="您的私人诊所，在此可查看接诊情况" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/text_layout"
+        android:layout_toRightOf="@+id/title_image"
+        android:layout_marginTop="@dimen/margin_top_8dp"
+        android:background="@color/edit_stroke" />
+
+</RelativeLayout>

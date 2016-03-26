@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <EditText
+        android:id="@+id/post_title_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_right_8dp"
+        android:background="@null"
+        android:hint="请输入标题"
+        android:padding="8dp"
+        android:textColor="@color/edit_text"
+        android:textSize="@dimen/font_size_18sp" />
+
+    <View style="@style/underline" />
+
+    <EditText
+        android:id="@+id/post_content_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_right_8dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请输入内容"
+        android:lines="5"
+        android:maxLength="240"
+        android:padding="8dp"
+        android:textColor="@color/edit_text"
+        android:textSize="@dimen/font_size_18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/edit_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/noScrollgridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

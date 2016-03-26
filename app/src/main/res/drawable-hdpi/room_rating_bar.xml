@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:layout_height="10dp"
+        android:layout_width="10dp"
+        android:drawable="@drawable/icon_start_bg_small" />
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:layout_height="wrap_content"
+        android:drawable="@drawable/icon_start_bg_small" />
+    <item
+        android:id="@android:id/progress"
+        android:layout_height="10dp"
+        android:layout_width="10dp"
+        android:drawable="@drawable/icon_star_small" />
+
+</layer-list>

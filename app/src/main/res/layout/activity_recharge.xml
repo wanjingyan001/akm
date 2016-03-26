@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_balance"
+            android:textSize="@dimen/font_size_20sp" />
+
+        <TextView
+            android:id="@+id/current_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0元"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_size_20sp" />
+    </LinearLayout>
+
+    <ViewSwitcher
+        android:id="@id/mViewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.wei.library.widget.EmptyView
+            android:id="@id/mEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.handmark.pulltorefresh.PullToRefreshListView
+            android:id="@id/generalPullToRefreshLsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0.5dp"
+            android:divider="@drawable/list_divider" />
+
+    </ViewSwitcher>
+
+</LinearLayout>

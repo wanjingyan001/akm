@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.zsmy.akm.salon.activity.PlatformListActivity">
+    <item
+        android:id="@+id/publish_post"
+        android:orderInCategory="100"
+        android:title="@string/posted"
+        app:showAsAction="always" />
+</menu>

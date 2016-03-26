@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/widgets_general_row_normal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reply_setting"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+
+
+            <CheckBox
+                android:id="@+id/reply_switch_btn"
+                style="@style/SlideSwitch" />
+        </LinearLayout>
+
+        <View style="@style/underline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/advisory_message"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+
+
+            <CheckBox
+                android:id="@+id/advisory_switch_btn"
+                style="@style/SlideSwitch" />
+            <!--<com.leaking.slideswitch.SlideSwitch-->
+            <!--android:id="@+id/advisory_switch_btn"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--app:isOpen="false"-->
+            <!--app:shape="circle"-->
+            <!--app:themeColor="#F262AA12" />-->
+        </LinearLayout>
+
+        <View style="@style/underline" />
+
+        <LinearLayout
+            android:id="@+id/ling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/spread_message"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/spread_switch_btn"
+                style="@style/SlideSwitch" />
+
+            <!--<com.leaking.slideswitch.SlideSwitch-->
+            <!--android:id="@+id/spread_switch_btn"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--app:isOpen="false"-->
+            <!--app:shape="circle"-->
+            <!--app:themeColor="#F262AA12" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

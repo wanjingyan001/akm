@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_8dp"
+    android:layout_marginLeft="@dimen/margin_left_8dp"
+    >
+
+    <TextView
+        android:id="@+id/message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_18sp"
+        android:textColor="@color/title_color"
+        android:text="@string/doctor_reply" />
+
+    <TextView
+        android:id="@+id/messags_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="2015-11-25 13:34" />
+
+    <TextView
+        android:id="@+id/message_centent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/message_title"
+        android:layout_below="@+id/message_title"
+        android:layout_marginTop="5dp"
+        android:text="亲爱的刘女士，您咨询的“冬天畏寒，身体酸痛，还是...”,李云峰主任医师已回复您。"
+        android:textColor="@color/text_content"
+        android:textSize="@dimen/font_size_14sp" />
+
+
+</RelativeLayout>

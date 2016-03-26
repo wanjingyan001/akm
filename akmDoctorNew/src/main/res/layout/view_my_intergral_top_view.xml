@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:padding="8dp"
+    android:background="@color/white">
+        <ImageView
+            android:id="@+id/all_money_pic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_launcher"/>
+        <TextView
+            android:id="@+id/consumption_type"
+            android:layout_toRightOf="@id/all_money_pic"
+            android:layout_alignBottom="@id/all_money_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="问诊消费"
+            />
+        <TextView
+            android:id="@+id/balance"
+            android:layout_below="@id/all_money_pic"
+            android:layout_alignLeft="@id/consumption_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="余额：2.00"/>
+</RelativeLayout>

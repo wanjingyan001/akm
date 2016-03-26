@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_bottom_8dp"
+    android:paddingLeft="@dimen/padding_left_8dp"
+    android:paddingRight="@dimen/padding_right_16dp"
+    android:paddingTop="@dimen/padding_top_8dp">
+
+    <ImageView
+        android:id="@+id/red_point"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@mipmap/ic_gray_paint_small" />
+
+    <TextView
+        android:id="@+id/collect_post_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_toRightOf="@+id/red_point"
+        android:text="标题"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/font_size_16sp" />
+
+    <TextView
+        android:id="@+id/collection_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/collect_post_title"
+        android:layout_below="@+id/collect_post_title"
+        android:layout_marginTop="@dimen/margin_top_8dp"
+        android:text="2015-12-18"
+        android:textColor="@color/text_color_black" />
+
+
+</RelativeLayout>

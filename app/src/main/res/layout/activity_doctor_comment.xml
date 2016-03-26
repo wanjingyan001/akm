@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        style="@style/ratingbar_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_16dp">
+
+        <EditText
+            android:id="@+id/evaluation_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/doctor_layout_frame"
+            android:gravity="top"
+            android:hint="@string/patient_comment"
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:minLines="8" />
+
+        <Button
+            android:id="@+id/submit_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/selector_general_button"
+            android:text="@string/submit_comment"
+            android:textColor="@color/widgets_general_row_normal"
+            android:textSize="@dimen/font_title_18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

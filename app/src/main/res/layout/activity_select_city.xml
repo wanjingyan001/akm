@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_16dp">
+
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海"
+            android:textColor="@color/text_color_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_16dp"
+            android:text="GPS定位"
+            android:textSize="@dimen/font_size_16sp" />
+    </LinearLayout>
+
+    <ViewSwitcher
+        android:id="@id/mViewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.wei.library.widget.EmptyView
+            android:id="@id/mEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.handmark.pulltorefresh.PullToRefreshListView
+            android:id="@id/generalPullToRefreshLsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0.1dp"
+            android:divider="@color/edit_stroke"/>
+    </ViewSwitcher>
+
+</LinearLayout>

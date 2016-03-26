@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/patient_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <RelativeLayout
+            android:id="@+id/patient_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/patient_message_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:src="@mipmap/ic_patient_message" />
+
+            <ImageView
+                android:id="@+id/patient_red_pation"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+                android:src="@mipmap/ic_red_point" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/patient_reply_title"
+            style="@style/font_style_black"
+            android:layout_marginLeft="@dimen/margin_left_8dp"
+            android:layout_toRightOf="@+id/patient_message"
+            android:paddingTop="12dp"
+            android:text="@string/patient_reply" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/patient_reply_title"
+            android:layout_below="@+id/patient_reply_title"
+            android:layout_marginTop="5dp"
+            android:text="@string/patient_reply_remind"
+            android:textSize="@dimen/font_size_16sp" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="12dp"
+            android:text="10:30"
+            android:textSize="@dimen/font_size_16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/edit_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/system_messages_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <RelativeLayout
+            android:id="@+id/system_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/system_messages_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:src="@mipmap/ic_system_image" />
+
+            <ImageView
+                android:id="@+id/system_red_pation"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+                android:src="@mipmap/ic_red_point" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/system_messages_title"
+            style="@style/font_style_black"
+            android:layout_marginLeft="@dimen/margin_left_8dp"
+            android:layout_toRightOf="@+id/system_messages"
+            android:paddingTop="12dp"
+            android:text="@string/system_messages" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/system_messages_title"
+            android:layout_below="@+id/system_messages_title"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/font_size_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/system_messages_title"
+            android:paddingTop="12dp"
+            android:text="2015-11-12"
+            android:textSize="@dimen/font_size_16sp" />
+
+    </RelativeLayout>
+</LinearLayout>

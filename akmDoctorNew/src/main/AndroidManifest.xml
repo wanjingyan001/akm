@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.zsmy.doctor">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <uses-sdk tools:overrideLibrary="com.liangfeizc.flowlayout" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />s
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="cn.zsmy.akm.doctor.home.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="cn.zsmy.akm.doctor.home.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登录注册-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.login.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--个人中心-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.ProfileCenterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 接诊室-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.admissions.ContactOfficeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!-- 个人信息-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.ProfileInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 我的收益-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.MyIncomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <!-- 我的积分-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.MyIntegralActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <!-- 收支明细-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.BalanceDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <!-- 我的服务-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.MyServiceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 服务信息-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.ServiceTimeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 更多-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.MoreActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 关于我们-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.AboutUsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 用户协议-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.UserAgreementActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 用户帮助-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.UserHelpActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--病例-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.learning.CaseListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 所有版块-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.learning.AllAreaActivity"
+            android:screenOrientation="portrait" />
+
+        <!--学术圈-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.learning.ScholarshipActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--收藏版块-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.learning.CollectionAreaActivity"
+            android:screenOrientation="portrait" />
+        <!-- 就医建议-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.admissions.DoctorSuggestActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 选择医院-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.admissions.SelectHospitalActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 选择检验项目-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.admissions.SelectExamineActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 搜索医院-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.admissions.SearchHospitalActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择药品-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.admissions.SelectDrugActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 药品详情-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.admissions.DrugDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 查看药品详情-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.admissions.DrugDetailView"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 查看检验详情-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.admissions.ExamineDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 查看就医建议-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.admissions.DoctorsRecommend"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!-- 首页-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.home.NavigationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.home.HomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.home.ShareQRCode"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 消息中心-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.messageCenter.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.messageCenter.PushSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.messageCenter.NoticeCenter"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.messageCenter.NoticeDetail"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.messageCenter.FeedbackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 病例库-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.MyPatientActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.PatientDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.MyCollectionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.PublishedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.choosePhoto.AlbumActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.choosePhoto.BitmapCache"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.choosePhoto.GalleryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.choosePhoto.ImageFile"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.choosePhoto.ShowAllPhoto"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.PostDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.conversation.ReplyPostActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.login.activity.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cn.zsmy.akm.doctor.chat.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.edit.EditActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.edit.SelectActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.edit.RecordingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cn.zsmy.akm.doctor.learning.SearchAreaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.learning.SearchCaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.zsmy.akm.doctor.shared.ChatPictureLookActivity"
+            android:screenOrientation="portrait" />
+
+        <!--帖子图片滑动查看-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.shared.PicturelookActivity"
+            android:screenOrientation="portrait" />
+
+        <!--视频录制-->
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.edit.VideoRecordActivity"
+            android:screenOrientation="portrait"
+            android:clearTaskOnLaunch="true"/>
+
+        <activity
+            android:name="cn.zsmy.akm.doctor.profile.edit.PreviewActivity"
+            android:screenOrientation="portrait"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask"/>
+
+
+        <!-- 友盟自动更新-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="569ddfa467e58e0fd00021cb" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService"></service>
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+        <!-- push service start -->
+        <!-- 用于接收系统消息以保证PushService正常运行 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <!-- Push服务接收客户端发送的各种请求 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 -->
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+        <!-- push结束 -->
+
+        <service android:name="cn.zsmy.akm.doctor.chat.im.IMPushService"></service>
+
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="kiXfVPNyrvvOFsXWU6cVYqDW" />
+
+
+        <receiver android:name="cn.zsmy.akm.doctor.chat.receiver.NetWorkConnectionReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push应用定义消息receiver声明 -->
+        <receiver android:name="cn.zsmy.akm.doctor.chat.receiver.MyPushMessageReceiver">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cn.zsmy.akm.doctor.messageCenter.NoticeBroadCastReceive"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="Receive_notification_of_control" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

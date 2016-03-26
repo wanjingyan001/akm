@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_bottom_16dp"
+        android:paddingLeft="@dimen/padding_left_16dp">
+
+        <LinearLayout
+            android:id="@+id/notice_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_top_16dp">
+
+            <ImageView
+                android:id="@+id/notice_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_notice_headimg" />
+
+            <TextView
+                android:id="@+id/notice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:30" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/notice_img">
+
+            <LinearLayout
+                android:id="@+id/notice_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_toLeftOf="@+id/icon_delete_notice"
+                android:background="@drawable/chat_from_bg_normal">
+
+                <TextView
+                    android:id="@+id/notice_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="亲爱的刘女士"
+                    android:textColor="@color/text_color_black" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icon_delete_notice"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@mipmap/icon_delete_notice"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_top_8dp"
+                android:layout_marginRight="@dimen/margin_right_8dp"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

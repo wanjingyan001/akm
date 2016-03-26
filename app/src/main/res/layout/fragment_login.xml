@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/login_cancel"
+        style="@style/textstyle_blue"
+        android:layout_marginLeft="@dimen/margin_left_16dp"
+        android:text="@string/back" />
+
+    <TextView
+        android:id="@+id/fast_registered"
+        style="@style/textstyle_blue"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_right_16dp"
+        android:text="@string/fast_registered" />
+
+    <TextView
+        android:id="@+id/login_akm_doctor"
+        style="@style/text_style_black"
+        android:layout_below="@+id/fast_registered"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_app" />
+
+    <EditText
+        android:id="@+id/register_input_mobile"
+        style="@style/edittext_style"
+        android:inputType="number"
+        android:layout_below="@+id/login_akm_doctor"
+        android:hint="@string/input_mobile_number" />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        style="@style/edittext_style"
+        android:inputType="textPassword"
+        android:layout_below="@+id/register_input_mobile"
+        android:maxLength="12"
+        android:hint="@string/password" />
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/button_style"
+        android:layout_below="@+id/login_pwd"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_8dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/font_color"
+        android:textSize="@dimen/font_size_14sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot_password">
+
+        <include layout="@layout/layout_third_login" />
+    </RelativeLayout>
+
+</RelativeLayout>

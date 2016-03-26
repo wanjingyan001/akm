@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/selected_day_text"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <Button
+        android:id="@+id/add_new_patient_button_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableLeft="@drawable/add"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="@string/add_new_patient" />
+
+    <com.handmark.pulltorefresh.PullToRefreshListView
+        android:id="@id/generalPullToRefreshLsv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/widgets_general_row_line"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:smoothScrollbar="true" />
+
+    <Button
+        android:id="@+id/mDiseaseNextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_general_button"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_left_16dp"
+    android:paddingRight="@dimen/padding_right_16dp">
+
+
+
+    <View
+        android:id="@+id/line_up"
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:background="@color/widgets_general_row_line" />
+
+    <ImageView
+        android:id="@+id/blue_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/suggest_content_layout"
+        android:layout_below="@+id/line_up"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/icon_blue_paint" />
+
+    <View
+        android:id="@+id/line_down"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/suggest_content_layout"
+        android:layout_below="@+id/blue_circle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:background="@color/widgets_general_row_line" />
+
+
+    <RelativeLayout
+        android:id="@+id/suggest_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_left_8dp"
+        android:layout_toRightOf="@+id/blue_circle"
+        android:background="@drawable/chat_from_bg_normal">
+
+        <TextView
+            android:id="@+id/doctor_name"
+            style="@style/text_title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="常吉密主任医师" />
+
+        <View
+            style="@style/underline"
+            android:layout_below="@+id/doctor_name" />
+
+        <TextView
+            android:id="@+id/chief_complaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctor_name"
+            android:layout_below="@+id/doctor_name"
+            android:layout_marginTop="@dimen/margin_top_8dp"
+            android:text="主诉："
+            android:textColor="#FF31FF2A"
+            android:textSize="@dimen/font_size_16sp" />
+
+        <TextView
+            android:id="@+id/chief_complaint_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/chief_complaint"
+            android:layout_marginLeft="@dimen/margin_left_8dp"
+            android:layout_toRightOf="@+id/chief_complaint"
+            android:text="喉咙有痰,全身酸痛，嘴里很淡很苦。喉咙有痰,全身酸痛，嘴里很淡很苦"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/font_size_16sp" />
+
+
+        <TextView
+            android:id="@+id/suggest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chief_complaint"
+            android:layout_below="@+id/chief_complaint_detail"
+            android:layout_marginTop="5dp"
+            android:text="建议："
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/font_size_16sp" />
+
+        <TextView
+            android:id="@+id/suggest_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/suggest"
+            android:layout_marginLeft="@dimen/margin_left_8dp"
+            android:layout_toRightOf="@+id/suggest"
+            android:text="@string/suggest_detail"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/font_size_16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

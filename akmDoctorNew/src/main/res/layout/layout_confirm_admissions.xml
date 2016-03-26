@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_bottom_16dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="@dimen/padding_top_16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请在5分钟内接诊，超时订单将退回系统"
+        android:textSize="@dimen/font_size_16sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ignore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_normal"
+            android:text="忽略"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18sp" />
+
+        <Button
+            android:id="@+id/admissions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_16dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_normal"
+            android:text="接诊"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

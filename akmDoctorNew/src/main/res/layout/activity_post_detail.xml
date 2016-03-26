@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/widgets_dot_normal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/padding_left_8dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/from_sections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自：皮肤科"
+            android:textColor="@color/app_main_color" />
+    </LinearLayout>
+
+
+    <com.handmark.pulltorefresh.PullToRefreshListView
+        android:id="@id/generalPullToRefreshLsv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:background="@color/widgets_general_row_pressed"
+        android:dividerHeight="0.3dp"
+        android:divider="@drawable/post_detail_divider"
+        android:focusable="false"
+        android:scrollbars="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_post_refresh" />
+
+        <LinearLayout
+            android:id="@+id/collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/forum_collect_cb"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/button_liked"
+                android:button="@null"
+                android:padding="@dimen/padding_16dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/reply"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_reply" />
+
+    </LinearLayout>
+
+</LinearLayout>

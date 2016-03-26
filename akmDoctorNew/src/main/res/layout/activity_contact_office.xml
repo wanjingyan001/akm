@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+     android:groupIndicator="@null" 取消默认图片
+     android:childIndicatorLeft 设置孩子左边间距
+     android:dividerHeight 这个高度一定要设置，不然显示不出来分割线，估计默认为0 吧
+     android:childDivider="@drawable/child_bg" 这个直接引color,或者图片会导致整个孩子背景都为这个颜色
+    -->
+    <include layout="@layout/layout_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/contact_office_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <com.handmark.pulltorefresh.PullToRefreshExpandableListView
+        android:id="@+id/expandablelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:cacheColorHint="@null"
+        android:childIndicatorLeft="0dp"
+        android:divider="@null"
+        android:dividerPadding="10dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"></com.handmark.pulltorefresh.PullToRefreshExpandableListView>
+</LinearLayout>

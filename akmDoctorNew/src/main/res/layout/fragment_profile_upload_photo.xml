@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:text="上传个人照片\n请上传清晰的免冠证件照" />
+        <TextView
+            android:id="@+id/profile_up_card_pic_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+             />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/load_your_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="7dp"
+                android:maxHeight="80dp"
+                android:maxWidth="80dp"
+                android:scaleType="centerInside"
+                android:background="@mipmap/ic_add_photo" />
+            <Button
+                android:id="@+id/image_submit_one"
+                android:layout_width="72dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/upload_doctor_info_pic_button_shape"
+                android:textColor="@color/white"
+                android:text="提交"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cream"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:text="上传个人视频\n请上传您的个人介绍视频\n（1分钟内）" />
+            <TextView
+                android:id="@+id/profile_up_cream_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/load_your_video"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="7dp"
+                android:maxHeight="80dp"
+                android:maxWidth="80dp"
+                android:scaleType="centerInside"
+                android:background="@mipmap/ic_add_photo" />
+            <Button
+                android:id="@+id/vedio_submit_two"
+                android:layout_width="72dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/upload_doctor_info_pic_button_shape"
+                android:textColor="@color/white"
+                android:text="提交"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cream"
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:text="*以上信息只在掌尚名医工作室医生简介页面展示，仅供患者了解您的基本信息，不做其他用途，请放心填写。" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/privous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_right_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_general_button"
+            android:textSize="@dimen/font_size_18sp"
+            android:text="上一步"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_general_button"
+            android:textSize="@dimen/font_size_18sp"
+            android:text="下一步"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

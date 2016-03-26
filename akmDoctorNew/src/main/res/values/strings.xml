@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">掌尚名医工作室</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="profile_list">
+        <item>个人中心</item>
+        <item>我的收益</item>
+        <item>我的积分</item>
+        <item>服务收费</item>
+        <item>邀请患者报道</item>
+        <item>邀请医生伙伴</item>
+        <item>更多</item>
+    </string-array>
+    <string-array name="profile_info_list">
+        <item>姓名:未填写</item>
+        <item>性别:未填写</item>
+        <item>城市:未填写</item>
+        <item>医院:未填写</item>
+        <item>科室:未填写</item>
+        <item>职称:未填写</item>
+        <item>科室电话:未填写</item>
+    </string-array>
+        　　    <string-array name="home_activity_title_content_info">
+        　　        <item>您的私人诊所，在此可查看接诊情况。</item>
+        　　        <item>您查看历史接诊病人病历，查阅收藏经典病例中心。</item>
+        　　        <item>您的互动社区，分享与交流学术中心。</item>
+        　　        <item>您的私人工作簿，灵活制定工作、生活日程。</item>
+        　　        <item>您的账户管理中心，查看收益、个人认证及更多。</item>
+     </string-array>
+    　　    <string-array name="home_activity_child_title_admissions_info">
+　　        <item>系统分配问诊，请在5分钟内确认接诊。</item>
+　　        <item>预约您的问诊，请尽快回复，勿让患者等过久哦。</item>
+　　        <item>离线问诊中心，您可以在24小时内回复患者的咨询。</item>
+</string-array>
+    　　    <string-array name="home_activity_child_title_case_info">
+　　        <item>问诊过的病人及其病历中心。</item>
+　　        <item>可在此查看问诊过程中，收藏的经典病历。</item>
+</string-array>
+    <string-array name="home_activity_child_title_learning_info">
+        <item>病例分享、经典病例查看。</item>
+        　　         <item>论坛中心，可互动学习。</item>
+    </string-array>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <!-- 登录注册-->
+    <string name="back">返回</string>
+    <string name="cancel">取消</string>
+    <string name="password">密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="confirm_register">确认注册</string>
+    <string name="setting_password">设置密码</string>
+    <string name="login">登录</string>
+    <string name="sign_out">退出登录</string>
+    <string name="registered">注册掌尚名医工作室</string>
+    <string name="login_app">登录掌尚名医工作室</string>
+    <string name="input_mobile_number">填写手机号</string>
+    <string name="get_sercurity_code">获取验证码</string>
+    <string name="or_third_login">或使用其他登录方式登录</string>
+    <string name="setting_yours_password">设置您的密码</string>
+    <string name="input_security_code">填写验证码</string>
+    <string name="please_input">请填写验证码</string>
+    <string name="sercurity_code">验证码</string>
+    <string name="finish">完成</string>
+    <string name="reset_sercurity_code">60秒后重新发送验证码</string>
+    <string name="voice_code">短信收不到？尝试语音验证码</string>
+    <string name="next">下一步</string>
+    <string name="reset_password">重置密码</string>
+    <string name="reset_your_password">重新设置您的密码</string>
+    <string name="retrieve_password">找回密码</string>
+    <string name="retrieve_input_mobile_number">请填写您注册时的手机号并验证</string>
+    <string name="fast_registered">快速注册</string>
+    <string name="forgot_password">忘记密码?</string>
+
+    <!-- 主界面-->
+    <string name="zsmy">掌尚名医工作室</string>
+    <string name="integral">积分</string>
+    <string name="balance">余额</string>
+    <string name="contact_office">接诊室</string>
+    <string name="case_history">病历库</string>
+    <string name="interactive">互动学习</string>
+    <string name="schedule">日程安排</string>
+    <string name="personal">个人中心</string>
+    <string name="yours_clinic">您的私人诊所，在此可查看接诊情况</string>
+    <string name="academic_circles">学术圈、病历中心、交流互动</string>
+    <string name="schedule_arrangement">您的私人诊所，设置您的接诊日程</string>
+    <string name="invite_patient">查看《邀请患者报到奖励》</string>
+    <string name="invite_doctor">查看《邀请医生好友奖励》</string>
+    <string name="qs_code_share">让患者扫您的二维码名片向您报到</string>
+    <string name="share">分享二维码</string>
+    <string name="my_QR">我的二维码</string>
+
+    <!-- 设置和消息-->
+    <string name="setting">设置</string>
+    <string name="message_notification">消息通知</string>
+    <string name="allow">接诊</string>
+    <string name="not_allow">不接诊</string>
+    <string name="notice_center">通知中心</string>
+    <string name="patient_reply">患者回复消息</string>
+    <string name="patient_reply_remind">患者已回复您，请注意查看</string>
+    <string name="system_messages">系统消息</string>
+    <string name="reply_remind">患者回复提醒</string>
+    <string name="study_remind">互动学习资讯提醒</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="submit">提交</string>
+    <string name="feed_back_title">感谢您使用掌尚名医工作室，我们将竭诚为您提供优质的服务。</string>
+    <string name="user_feed_content">请写下您对掌尚名医工作室的意见和建议，我们将认真倾听。及时修改不足，以便让您使用更加便捷，谢谢！</string>
+
+
+    <!-- 病历库-->
+    <string name="my_patient">我的病人</string>
+    <string name="publish_title">标题：</string>
+    <string name="content">正文：</string>
+    <string name="photo">照片</string>
+    <string name="post">发帖</string>
+    <string name="Case">病例</string>
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="photo_remind">*注请勿上传涉及患者隐私的照片</string>
+    <string name="post_detail">帖子详情</string>
+    <string name="illness_collection">分享病历</string>
+    <string name="post_detail_content">正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</string>
+
+
+    <!--通话界面所需要的文案-->
+    <string name="str_recorder_normal">按住 说话</string>
+    <string name="str_recorder_recording">松开 结束</string>
+    <string name="str_recorder_want_cancel">松开手指 取消发送</string>
+
+
+    <!--编辑个人信息-->
+    <string name="save">保存</string>
+    <string name="inquiry_person">问诊人  :</string>
+</resources>

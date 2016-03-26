@@ -1,0 +1,353 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/widgets_general_row_normal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/widgets_general_row_normal"
+                android:padding="@dimen/margin_8dp">
+
+                <RelativeLayout
+                    android:id="@+id/head_portrait_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/doctor_layout_frame">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/doctor_head_portrait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/doctor_head_portrait_img"
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:paddingBottom="@dimen/margin_8dp"
+                                android:src="@drawable/ic_doctor_images" />
+
+                            <TextView
+                                android:id="@+id/doctor_head_portrait_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:background="@drawable/button_style_blue"
+                                android:text="李云峰"
+                                android:textColor="@color/white" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/doctor_hospital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/doctor_head_portrait"
+                            android:text="@string/doctor_hosptial"
+                            android:textColor="@color/text_color_black" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/belong_sections"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="皮肤科"
+                                    android:textColor="@color/text_color_black"
+                                    android:textSize="@dimen/font_size_16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="所属科室"
+                                    android:textColor="@color/edit_text" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/margin_8dp"
+                                android:background="@color/edit_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/job_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="主任医生"
+                                    android:textColor="@color/text_color_black"
+                                    android:textSize="@dimen/font_size_16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="医生职称"
+                                    android:textColor="@color/edit_text" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="@dimen/margin_8dp"
+                                android:background="@color/edit_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/job_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10年"
+                                    android:textColor="@color/text_color_black"
+                                    android:textSize="@dimen/font_size_16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="临床经验"
+                                    android:textColor="@color/edit_text" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/margin_8dp"
+                        android:background="@drawable/text_certified"
+                        android:text="已认证"
+                        android:textColor="@color/red" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/widgets_general_row_normal"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/diagnosis"
+                    style="@style/text_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="擅长诊断" />
+
+                <TextView
+                    android:id="@+id/diagnosis_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_16dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:text="擅长皮肤症状，皮炎"
+                    android:textColor="@color/text_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/background_color" />
+
+            <LinearLayout
+                android:id="@+id/doctor_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_8dp"
+                android:background="@color/widgets_general_row_normal"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/text_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/doctor_introduction" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_16dp"
+                    android:layout_marginRight="@dimen/margin_right_16dp"
+                    android:background="@color/widgets_general_row_pressed" />
+
+                <TextView
+                    android:id="@+id/introduction_centent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_16dp"
+                    android:layout_marginTop="@dimen/margin_top_8dp"
+                    android:ellipsize="end"
+                    android:lines="3"
+                    android:text="@string/doctor_introduction_centent" />
+
+                <ImageView
+                    android:id="@+id/show_introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/margin_right_8dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_down" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/background_color" />
+
+            <LinearLayout
+                android:id="@+id/user_evaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_8dp"
+                android:background="@color/widgets_general_row_normal"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/user_evaluation_title"
+                        style="@style/text_title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_evaluation" />
+
+                    <TextView
+                        android:id="@+id/all_evaluation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_right_16dp"
+                        android:layout_marginTop="@dimen/margin_top_8dp"
+                        android:text="@string/all_evaluation" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_right_8dp"
+                        android:src="@drawable/right_next" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_16dp"
+                    android:layout_marginRight="@dimen/margin_right_16dp"
+                    android:background="@color/widgets_general_row_line" />
+
+                <include layout="@layout/layout_evaluation_item" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dividing_line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/widgets_general_row_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/widgets_general_row_normal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/price_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/famous_inquiry" />
+
+                    <TextView
+                        android:id="@+id/inquiry_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥105"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/font_size_16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/currency_unit" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/to_inquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/price_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_top_8dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_style_long"
+                    android:text="@string/to_inquiry"
+                    android:textColor="@color/widgets_general_row_normal" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zsmy.akm.home.MessagesContentActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <ViewSwitcher
+        android:id="@id/mViewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.wei.library.widget.EmptyView
+            android:id="@id/mEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+    </ViewSwitcher>
+</LinearLayout>

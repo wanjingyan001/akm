@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_bottom_8dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="@dimen/padding_top_8dp">
+
+    <TextView
+        android:id="@+id/recharge_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值xx元"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/font_size_18sp" />
+
+    <LinearLayout
+        android:id="@+id/send_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recharge_amount"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/send_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_background_red"
+            android:text="送"
+            android:textColor="@color/widgets_general_row_normal"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <TextView
+            android:id="@+id/send_money_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/send_money"
+            android:text="赠送xx元"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_size_14sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/spend_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/send_layout"
+        android:background="@drawable/text_certified"
+        android:text="¥xx"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_size_18sp" />
+</RelativeLayout>

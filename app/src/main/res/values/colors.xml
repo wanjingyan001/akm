@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="windowBackground">#F9F9FB</color>
+    <color name="title">#3E83EC</color>
+    <color name="font_color">#3f83EC</color>
+    <color name="function_status_bg_color">#3E83EC</color>
+    <color name="widgets_general_row_pressed">#E9E9E9</color>
+    <color name="widgets_general_row_normal">#ffffff</color>
+    <color name="widgets_general_row_line">#d8dde0</color>
+
+    <color name="edit_text">#aaaaaa</color>
+    <color name="title_color">#333333</color>
+    <color name="edit_stroke">#cccccc</color>
+    <color name="thrid_login_text">#696969</color>
+    <color name="sub_title">#666666</color>
+    <color name="edit_content">#999999</color>
+    <color name="red">#fd2901</color>
+    <color name="font_red">#fd2901</color>
+    <color name="text_color_black">#030303</color>
+
+    <color name="text_content">#424242</color>
+    <color name="suggest_color">#838383</color>
+    <color name="background_color">#f1f0ee</color>
+    <color name="Sidebar">#fff0dd</color>
+
+    //通话界面所需要的颜色
+
+    <color name="none_color">#00000000</color>
+    <color name="widgets_dot_pressed">#8c8c8c</color>
+    <color name="widgets_dot_normal">#bcbcbc</color>
+    <color name="widgets_emo_pannel_bg">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#C7C5C5</color>
+    <color name="green">#7ec553</color>
+
+    <color name="chat_press_send_color">#3066ba</color>
+
+    <color name="chat_rated_color">#bcbcbc</color>
+</resources>

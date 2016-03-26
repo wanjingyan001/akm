@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_8dp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/padding_bottom_8dp"
+        android:paddingLeft="@dimen/padding_left_8dp">
+
+        <ImageView
+            android:id="@+id/integral_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_money" />
+
+        <TextView
+            android:id="@+id/integral_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/integral_image"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/integral_image"
+            android:text="积分余额"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/font_size_16sp" />
+
+        <TextView
+            android:id="@+id/integral_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/integral_title"
+            android:layout_below="@+id/integral_title"
+            android:text="0.00"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/font_size_16sp" />
+    </RelativeLayout>
+
+    <ViewSwitcher
+        android:id="@id/mViewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <cn.wei.library.widget.EmptyView
+            android:id="@id/mEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.handmark.pulltorefresh.PullToRefreshListView
+            android:id="@id/generalPullToRefreshLsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top_8dp"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="0.5dp" />
+    </ViewSwitcher>
+
+    <Button
+        android:id="@+id/exchange_integral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_bottom_8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="@dimen/margin_top_8dp"
+        android:background="@drawable/selector_general_button"
+        android:text="兑换积分"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_18sp" />
+</LinearLayout>

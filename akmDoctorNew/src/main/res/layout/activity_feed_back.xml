@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_16dp">
+
+        <TextView
+            android:id="@+id/feed_back_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feed_back_title"
+            android:textSize="@dimen/font_title_18sp" />
+
+        <EditText
+            android:id="@+id/user_feed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_16dp"
+            android:background="@drawable/rounded_edite"
+            android:gravity="top"
+            android:minLines="7"
+            android:padding="5dp"
+            android:text="@string/user_feed_content"
+            android:textColor="@color/edit_text"
+            android:textSize="@dimen/font_size_14sp" />
+
+
+        <Button
+            android:id="@+id/commit_user_feed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/selector_general_button"
+            android:text="@string/submit"
+            android:textColor="@color/widgets_general_row_normal"
+            android:textSize="@dimen/font_size_20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

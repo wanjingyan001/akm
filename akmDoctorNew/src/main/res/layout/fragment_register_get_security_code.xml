@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/get_security_code_login"
+        style="@style/textstyle_blue"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_right_16dp"
+        android:text="@string/login" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_security_code_login"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_app_logo" />
+
+    <TextView
+        android:id="@+id/registered_akm_doctor"
+        style="@style/text_style_black"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/registered" />
+
+    <EditText
+        android:id="@+id/register_input_mobile"
+        style="@style/edittext_style"
+        android:layout_below="@+id/registered_akm_doctor"
+        android:hint="@string/input_mobile_number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/get_security_code_btn"
+        style="@style/button_style"
+        android:layout_below="@+id/register_input_mobile"
+        android:text="@string/get_sercurity_code" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_security_code_btn">
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

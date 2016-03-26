@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/widgets_general_row_normal"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_16dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/recharge_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="当前选择"
+                android:textSize="@dimen/font_title_18sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                android:layout_toRightOf="@+id/recharge_amount">
+
+
+                <TextView
+                    android:id="@+id/choose_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充值xx元"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/font_size_18sp" />
+
+                <TextView
+                    android:id="@+id/send_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/choose_recharge"
+                    android:background="@drawable/text_background_red"
+                    android:text="送"
+                    android:textColor="@color/widgets_general_row_normal"
+                    android:textSize="@dimen/font_size_14sp" />
+
+                <TextView
+                    android:id="@+id/send_money_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/send_money"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/send_money"
+                    android:text="赠送xx元"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/font_size_14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            style="@style/underline"
+            android:layout_marginBottom="@dimen/margin_bottom_8dp" />
+
+
+        <TextView
+            android:id="@+id/amount_spent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_8dp"
+            android:text="支付金额：30.00元"
+            android:textSize="@dimen/font_title_18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/play_with_zhifubao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/widgets_general_row_normal"
+            android:padding="@dimen/padding_16dp">
+
+            <ImageView
+                android:id="@+id/zhifubao_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_zhifubao_play" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_16dp"
+                android:layout_toRightOf="@+id/zhifubao_img"
+                android:text="支付宝支付"
+                android:textSize="@dimen/font_size_18sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/widgets_general_row_line" />
+
+        <RelativeLayout
+            android:id="@+id/play_with_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/widgets_general_row_normal"
+            android:padding="@dimen/padding_16dp">
+
+            <ImageView
+                android:id="@+id/weixin_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_weixin_play" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left_16dp"
+                android:layout_toRightOf="@+id/weixin_img"
+                android:text="微信支付"
+                android:textSize="@dimen/font_size_18sp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_next" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

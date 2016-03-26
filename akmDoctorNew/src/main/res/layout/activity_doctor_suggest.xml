@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.zsmy.akm.doctor.widget.DocSugScroll xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/doc_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <include layout="@layout/layout_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Doctor_Suggest_TextView"
+                android:layout_margin="8dp"
+                android:text="诊断结果"
+                android:textColor="@color/app_main_color"/>
+
+            <TextView
+                style="@style/Base_TextView"
+                android:layout_margin="8dp"
+                android:text="*根据患者描述做出相应诊断" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/result_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:gravity="left"
+            android:hint="请认真填写诊断结果，内容在150字内"
+            android:minLines="6"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/icon_contact_add"
+                android:scaleType="centerInside" />
+
+            <TextView
+                style="@style/Doctor_Suggest_TextView"
+                android:layout_gravity="center_vertical"
+                android:text="就诊"
+                android:textColor="@color/app_main_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Doctor_Suggest_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+        <include
+            android:id="@+id/select_drug_next"
+            layout="@layout/layout_base_item" />
+
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/medication_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null">
+
+        </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+        <View style="@style/underline" />
+
+        <include
+            android:id="@+id/select_check_next"
+            layout="@layout/layout_base_item" />
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/test_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null">
+
+        </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+        <!--<TextView-->
+        <!--android:id="@+id/connact_check"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--android:paddingBottom="12dp"-->
+        <!--android:paddingLeft="52dp"-->
+        <!--android:paddingTop="12dp"-->
+        <!--android:text="检验项目"-->
+        <!--android:textSize="17sp"-->
+        <!--android:visibility="gone" />-->
+
+        <View style="@style/underline" />
+
+        <TextView
+            style="@style/Doctor_Suggest_TextView"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:text="医嘱"
+            android:textColor="@color/app_main_color"/>
+
+        <EditText
+            android:id="@+id/contact_doctor_speak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@color/white"
+            android:gravity="left"
+            android:hint="填写内容（嘱咐、注意事项等），非必填。"
+            android:minLines="3"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/contact_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_general_button"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:text="发送给患者"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</cn.zsmy.akm.doctor.widget.DocSugScroll>
